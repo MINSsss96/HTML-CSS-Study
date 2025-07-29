@@ -1,0 +1,10 @@
+ .container{
+  background-color: black;
+  width: 500px;
+  height: 500px;
+  /* background-image: url("/html_test/image/rose.PNG"); */
+  background-image: url(../image/rose.PNG);
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+ }
