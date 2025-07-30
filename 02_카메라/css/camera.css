@@ -1,0 +1,76 @@
+.box {
+  width: 550px;
+  height: 340px;
+
+  display: flex;
+}
+
+.left {
+  width: 100px;
+  height: 200px;
+  background-image: url(/02_카메라/image/camera.JPG);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+}
+
+.right {
+  margin-left: 10px;
+  width: 50%;
+  height: 90%;
+  float: right;
+
+  margin-top: 10px;
+
+}
+
+.title {
+  width: 100%;
+
+
+  font-size: 18px;
+}
+
+.imformation {
+
+
+  color: gray;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.price {
+
+  height: 10%;
+  margin-top: 3px;
+  font-size: 15px;
+}
+
+.heart-box {
+
+  height: 5%;
+  display: flex;
+  justify-content: flex-end; /* 오른쪽 정렬 */
+  align-items: center;
+}
+
+.heart:nth-child(1) {
+  background-image: url(../image/heart.png);
+  width: 15px;
+  height: 15px;
+  background-size: 15px;
+    margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: right;
+}
+
+.heart-num:nth-child(2) {
+  width: 15px;
+  height: 15px;
+  float: right;
+  font-size: 12px;
+}
