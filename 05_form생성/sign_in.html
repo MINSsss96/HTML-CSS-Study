@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/sign_in.css">
+  <script src = './js/check_sign.js'></script>
   <title>Document</title>
 </head>
 
 <body>
   <div class="container">
     <h1>회원 가입을 환영합니다.</h1>
-    <form action="get">
+    <form onsubmit="check_sign(event)">
       <fieldset>
         <legend>상품선택</legend>
         <ul>
@@ -29,7 +30,7 @@
           </li>
           <li>
             <label for="confirm">비밀번호 확인</label>
-            <input type="password" name="" id="confirm">
+            <input type="password" id="confirm">
           </li>
           <li>
             <label for="path">가입경로</label>
@@ -48,7 +49,7 @@
       </fieldset>
       <fieldset>
         <legend>이벤트와 새로운 소식</legend>
-        <input type="radio" name="mail" id="mail_y" value="yes">
+        <input type="radio" name="mail" id="mail_y" value="yes" checked>
         <label for="mail_y">메일 수신</label>
         <input type="radio" name="mail" id="mail_n" value="no">
         <label for="mail_n">메일 수신 거부</label>
@@ -63,11 +64,12 @@
         <label for="walking">도보</label>
       </fieldset>
       <div class="buttons">
-        <input type="submit" name="" id="" value="가입하기">
-        <input type="reset" name="" id="" value="취소">
+        <input type="submit" id="submit" value="가입하기">
+        <input type="reset" id="reset" value="취소">
       </div>
     </form>
   </div>
+ 
 </body>
 
 </html>
