@@ -73,3 +73,63 @@ div {
 .text-deco::first-line {
   color: blue;
 }
+
+
+div,
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+.form-background {
+  background-color: black;
+  padding: 30px;
+}
+
+.form-white {
+  background-color: white;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.w-100 {
+  width: 100%;
+  padding: 10px;
+}
+
+.w-50 {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+.yellow-button{
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  background-color: bisque;
+  border: 1px solid #ddd;
+
+}
+
+.nav-container{
+  display: flex;
+  height: 50px;
+  padding: 10px;
+  align-items: center;
+}
+
+.nav-item{
+  margin-right: 10px;
+  
+}

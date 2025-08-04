@@ -18,34 +18,48 @@
   }
 
 
-.info li label {
+  .info li label {
 
-  width: 70px;
-  font-weight: bold;
-  line-height: 35px;
-}
+    width: 100px;
+    font-weight: bold;
+    line-height: 35px;
+  }
 
-.info li input {
-  width: 400px;
-  font-weight: bold;
-}
+  .info li input {
+    width: 300px;
+    font-weight: bold;
+  }
 
 
 
-ul li {
-  margin: 10px;
-  display: flex;
-  align-items: center;
-}
-
+  ul li {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+  }
+/* 
   .buttons input {
-    margin: 20px 45px;
+    margin: 20px 48px;
     width: 150px;
     height: 50px;
     text-align: center;
 
     font-size: 17px;
-  }
+  } */
+   .buttons{
+  width: 400px;
+  margin: 20px auto;
+  text-align: center;
+
+}
+
+.buttons input{
+  width: 150px;
+  height: 50px;
+  font-size: large;
+  margin: 20px;
+}
+
 
   .order {
     background-color: blue;
@@ -55,6 +69,24 @@ ul li {
   .cancel {
     background-color: white;
   }
+
+  .notice {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+
+  #date {
+    width: 200px;
+    /* 입력창 크기 조절 */
+  }
+
+  .buttons input:hover{
+  background-color: bisque;
+  color: #000;
+  
+}
+
 </style>
 
 <body>
@@ -66,23 +98,23 @@ ul li {
           <h3 class="productchoice">주문할 상품을 선택해주세요</h3>
           <li>
             <input type="checkbox">
-            <label for="present3">선물용 3kg</label>
+            <label for="present3">선물용 3kg &nbsp;</label>
             <input type="text" type="text" name="uid" id="uid" size="1px">개 (최대5개)
           </li>
           <li>
             <input type="checkbox">
-            <label for="present5">선물용 5kg</label>
-            <input type="text" size="1px">개 (최대3개)
+            <label for="present5">선물용 5kg &nbsp;</label>
+            <input type="text" size="1px"> 개 (최대3개)
           </li>
           <li>
             <input type="checkbox">
-            <label for="household3">가정용 3kg</label>
-            <input type="text" size="1px">개 (최대5개)
+            <label for="household3">가정용 3kg &nbsp;</label>
+            <input type="text" size="1px"> 개 (최대5개)
           </li>
           <li>
             <input type="checkbox">
-            <label for="household5">가정용 5kg</label>
-            <input type="text" size="1px">개 (최대3개)
+            <label for="household5">가정용 5kg &nbsp;</label>
+            <input type="text" size="1px"> 개 (최대3개)
           </li>
         </ul>
 
@@ -121,15 +153,16 @@ ul li {
             <input type="text" name="phone" id="phone">
           </li>
 
-          <li> <label for="date" >배송지정</label>
-            <input type="datetime-local" name="" id=""><h5>(주문
-            일로부터 최소 3일 이후)</h5>
+          <li> <label for="date">배송지정</label>
+            <input type="datetime-local" name="date" id="date">
+            <div class="notice">&nbsp;(주문일로부터  <br>&nbsp;최소 3일 이후)</div>
+          </li>
           </li>
 
-<li>
-          <label for="memo">메모
-          </label> <textarea name="memo" id="memo"></textarea>
-</li>
+          <li>
+            <label for="memo">메모
+            </label> <textarea name="memo" id="memo" cols="40" rows="4"></textarea>
+          </li>
 
         </ul>
 

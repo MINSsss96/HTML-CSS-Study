@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    header{
+      border-bottom: 1px solid gray;
+      padding: 20px;
+
+      
+    }
+
+    footer{
+      border-top: 1px solid gray;
+           padding: 20px;
+           text-align: center;
+    }
+
+    .content{
+      display: flex;
+
+    }
+
+    .content nav{
+      flex-basis: 150px;
+      flex-shrink: 0;
+      border-right: 1px solid gray;
+    
+    }
+    
+    .content aside{
+            flex-basis: 150px;
+      flex-shrink: 0;
+      border-left: 1px solid gray;
+    }
+
+    main{
+      padding: 10px;
+      column-count: 2;
+      text-align: justify;
+      column-width: 200px;
+      column-gap: 30px;
+      column-rule-style: solid;
+      column-rule-width: 1px;
+      column-rule-color: red;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Holy Grail Layout</h1>
+    </header>
+    <section class="content">
+      <nav>
+        <ul>
+          <li>main</li>
+          <li>about</li>
+          <li>help</li>
+        </ul>
+      </nav>
+
+      <main>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus vel distinctio tempore perferendis, aperiam, debitis officiis ut atque similique aut eos commodi nulla? Repudiandae ab autem, minima commodi optio laborum!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, at sapiente repudiandae nihil nulla eaque dignissimos iusto quisquam perspiciatis illo mollitia nemo neque labore sequi laboriosam, voluptate eligendi, voluptatem hic.
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores assumenda sequi laudantium eum fugit nobis necessitatibus corporis. Minus, temporibus numquam nostrum vitae ut, voluptatem asperiores quaerat eveniet magni dolore accusamus!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor tempora obcaecati iste aliquam voluptate minus porro et animi. Quas eveniet nobis laborum qui nesciunt commodi deserunt, laboriosam quasi neque.
+      </main>
+
+      <aside>
+        AD(광고영역)
+      </aside>
+
+    </section>
+    <footer>
+      <a href="http://주소">홈페이지</a>
+    </footer>
+  </div>
+  
+</body>
+</html>
