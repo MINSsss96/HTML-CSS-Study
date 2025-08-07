@@ -133,3 +133,27 @@ textarea {
   margin-right: 10px;
   
 }
+
+/* 현재 브라우저의 폭이 1200px 이하가 될 때 적용할 css */
+
+@media screen and (max-width : 1200px) {
+  .main-title{
+    font-size: 30px;
+  }
+  
+}
+
+/* 폭이 768px 이하일 때  */
+@media screen and (max-width : 768px) {
+  .main-title{
+    font-size: 20px;
+  }
+}
+
+/* 폭이 576px 이하 일 때 */
+@media screen and (max-width : 576px) {
+  .main-title{
+    font-size: 10px;
+  }
+}
+
