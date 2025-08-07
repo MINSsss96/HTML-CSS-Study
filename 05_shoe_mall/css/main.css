@@ -113,7 +113,7 @@ textarea {
   padding: 10px;
 }
 
-.yellow-button{
+.yellow-button {
   padding: 10px;
   display: block;
   margin-left: auto;
@@ -122,19 +122,19 @@ textarea {
 
 }
 
-.nav-container{
+.nav-container {
   display: flex;
   height: 50px;
   padding: 10px;
   align-items: center;
 }
 
-.nav-item{
+.nav-item {
   margin-right: 10px;
-  
+
 }
 
-.product-container{
+.product-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -144,7 +144,7 @@ textarea {
   margin: auto;
 }
 
-.product-container > div {
+.product-container>div {
   flex: 1 1 25%;
 
   /* flex : <flex-grow> <flex-shrink> <flex-basis> */
@@ -162,38 +162,79 @@ textarea {
   display: block;
 }
 
+.shop-bg {
+  background-color: #eee;
+  padding: 20px;
+
+}
+
+.shop-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.shop-item {
+  width: 33%;
+  padding: 10px;
+  position: relative;
+}
+
+.shop-item img {
+  width: 100%;
+  display: block;
+
+}
+
+.overlay{
+ position: absolute; 
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.5);
+ opacity: 0;
+transition: all 1s;
+}
+
+.overlay:hover{
+  opacity: 1;
+}
 /* 현재 브라우저의 폭이 1200px 이하가 될 때 적용할 css */
 
 @media screen and (max-width : 1200px) {
-  .main-title{
+  .main-title {
     font-size: 30px;
   }
 
-.product-container{
-  max-width: 600px;
-  margin: 0 auto;
-}
-  .product-container > div{
+  .product-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .product-container>div {
     flex: 1 1 50%;
-    
+
   }
 }
+
+
 
 
 
 
 /* 폭이 768px 이하일 때  */
 @media screen and (max-width : 768px) {
-  .main-title{
+  .main-title {
     font-size: 20px;
   }
-  .product-container{
-  max-width: 600px;
-  margin: 0 auto;
-}
-  .product-container > div{
+
+  .product-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .product-container>div {
     flex: 1 1 100%;
-    
+
   }
 }
 
@@ -201,8 +242,7 @@ textarea {
 
 /* 폭이 576px 이하 일 때 */
 @media screen and (max-width : 576px) {
-  .main-title{
+  .main-title {
     font-size: 10px;
   }
 }
-
