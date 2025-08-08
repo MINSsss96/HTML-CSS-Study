@@ -1,56 +1,303 @@
-.container{
-  width: 100%;
-  height: 600px;
+.container-top {
+ max-width: 100%;
+  height: 400px;
   background-color: white;
-
-
-}
-
-
-
-
-.box{
-    position: relative;
+  display: flex;
+    flex-wrap: wrap; /* ✅ 추가 */
+  justify-content: space-around;
+  position: relative;
   width: 100%;
-  height: 100%;
-background : linear-gradient(to bottom, #4A98D9, #4D62C4 );
-color: white;
+  background: linear-gradient(to bottom, #4A98D9, #4D62C4);
+  color: white;
+  height: auto;            /* ✅ 줄바꿈 대응 */
 
 }
 
-.comment{
-  font-size: 24px;
-}
-
-.iphone-img{
-  width: 350px;
-  top: 100px;     /* Y축 위치 */
-  right: 40px;    /* X축 위치 */
+.iphone-img {
+  width: 300px;
+  align-self: flex-end;
   display: block;
-    flex-wrap: wrap;
-
+  margin-left: auto;   /* ✅ 오른쪽으로 밀어냄 */
+  margin-right: 100px; /* ✅ 필요 시 우측 여백 유지 */
 
 }
 
-.title{
-padding: 50px 0 0 50px;
+.title {
+  padding: 50px 0 0 50px;
   font-size: 40px;
 
 
 }
 
-.comment{
+.comment {
+  display: flex;
+    font-size: 24px;
   margin: 50px 0 0 50px;
   width: 50%;
 }
 
-.buttons{
+.buttons {
   width: 130px;
   height: 40px;
   font-size: px;
   background-color: #464144;
- display: flex;
- justify-content: center;
-align-items:center ;
-margin: 30px 0 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 0 50px;
 }
+
+
+.container-m1 {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+    height: auto; 
+
+}
+
+
+
+.comment-m1 {
+  font-size: 24px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.comment-m1-2 {
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-weight: 300;
+}
+
+.buttons-m1 {
+  width: 200px;
+  height: 80px;
+  font-size: 24px;
+  background-color: #464144;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.container-m2 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-color: #4D62C4;
+  color: white;
+}
+
+
+
+
+
+.title-m2-1 {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.product-container-total {
+  display: flex;
+  /* 가로 정렬을 위해 flex 사용 */
+  flex-direction: row;
+  /* 기본값이 row이지만 명시적으로 지정 */
+  justify-content: center;
+  /* 가운데 정렬 (원하면 왼쪽: flex-start, 오른쪽: flex-end) */
+  gap: 20px;
+  /* 이미지 사이 간격 */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.product-container i {
+
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  padding-top: 25px;
+  box-sizing: border-box;
+  color: #4D62C4;
+  margin: 50px auto 10px auto;
+  display: block;
+
+  font-size: 40px;
+
+}
+
+
+.container-m3 {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+
+.comment-m3 {
+  font-size: 14px;
+  font-weight: 300;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.comment-m3-1 {
+  font-size: 24px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+.container-4pic {
+  width: 90%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2열 고정 */
+  grid-template-rows: repeat(2, auto);
+  /* 2행 고정 */
+  gap: 0;
+  /* 간격 없애기 */
+  max-width: 100%;
+  /* 반응형 제한 */
+  flex-wrap: wrap;
+  justify-content: center;
+  /* 가운데 정렬 */
+  align-items: center;
+  justify-content: center;
+    margin: 0 auto; /* ⭐ 가로 가운데 정렬 */
+}
+
+.container-4pic-1 {
+  background-image: url("/img/portfolio_1/img/portfolio-1.jpg");
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+
+  background-size: cover;
+  /* 요소를 꽉 채우게 */
+  background-repeat: no-repeat;
+
+  background-position: center;
+  margin: 0;
+  /* 이미지 자체 여백 제거 */
+  padding: 0;
+
+}
+
+.container-4pic-2 {
+  background-image: url("/img/portfolio_1/img/portfolio-2.jpg");
+  height: 300px;
+  width: 100%;
+
+  margin: 0;
+  /* 이미지 자체 여백 제거 */
+  padding: 0;
+  background-size: cover;
+  /* 요소를 꽉 채우게 */
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+}
+
+.container-4pic-3 {
+  background-image: url("/img/portfolio_1/img/portfolio-3.jpg");
+  height: 300px;
+  width: 100%;
+
+  margin: 0;
+  /* 이미지 자체 여백 제거 */
+  padding: 0;
+  background-size: cover;
+  /* 요소를 꽉 채우게 */
+  background-repeat: no-repeat;
+
+}
+
+.container-4pic-4 {
+  background-image: url("/img/portfolio_1/img/portfolio-4.jpg");
+  height: 300px;
+  width: 100%;
+
+  margin: 0;
+  /* 이미지 자체 여백 제거 */
+  padding: 0;
+  background-size: cover;
+  /* 요소를 꽉 채우게 */
+  background-repeat: no-repeat;
+
+  background-position: center;
+}
+
+.comment-m4-1{
+  margin-top: 40px;
+  margin-left: 40px;
+  font-size: 30px;
+  color: white;
+}
+
+.comment-m4-2{
+    margin-top: 40px;
+  margin-left: 40px;
+  font-size: 20px;
+    color: white;
+}
+
+/*  height: 300px;
+  width: 40%;
+  
+  background-size: cover;  */
+/* 요소를 꽉 채우게 */
+/* background-repeat: no-repeat;
+
+  background-position: center;*/
